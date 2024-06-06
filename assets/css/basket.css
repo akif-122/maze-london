@@ -1,5 +1,147 @@
-.item {
+.basket-container {
+  margin: 80px 0;
+}
+.basket-container .basket {
+  background-color: #cccccc52;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.basket-container .basket h3 {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.basket .basket-items .item {
+  margin: 10px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 4px;
+}
+.basket .basket-items .item .img {
+  min-width: 60px;
+  max-width: 60px;
+  width: 60px;
+}
+.basket .basket-items .item .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+.basket .basket-items .item h5 {
+  width: 400px;
+
+  margin-right: auto;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.basket .basket-items .item p {
+  /* width: 10px; */
+  text-align: right;
+  margin: 0 10px;
+  font-size: 16px;
+}
+.btns {
+  margin: 0 10px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns button {
+  all: unset;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--black);
+  margin: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btns button:hover {
+  background-color: var(--crem);
+}
+#item-count {
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+}
+
+.remove-Item button {
+  all: unset;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: red;
+  background-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.remove-Item button:hover {
+  color: var(--black);
+}
+
+@media (max-width: 991px) {
+  .qty-wrap {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .basket .basket-items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .qty-wrap {
+    margin-left: 0px;
+  }
+.basket .basket-items .item h5 {
+  width: 100%;
+  margin-left: 0;
+  margin: 15px 0;
+
+}
+}
+
+
+@media (max-width: 575px){
+  
+.btns {
+  width: auto;
+}
+.btns button {
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+#item-count {
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.basket .basket-items .item h5{
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.remove-Item button {
+  font-size: 14px;
+}
 }

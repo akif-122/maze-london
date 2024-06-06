@@ -1,0 +1,94 @@
+.about .social{
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imgs/social-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.contact-wrap{
+    background-color: var(--black);
+    padding: 60px 10px;
+    margin-top: 100px;
+}
+
+.contact-wrap h2{
+    font-size: 34px;
+    margin-bottom: 0;
+    color: var(--crem);
+
+}
+.contact-wrap p{
+    color: #fefefe;
+}
+
+.contact-info h2{
+    font-size: 28px;
+    color: var(--crem);
+    margin-bottom: 20px;
+}
+.contact-info form label{
+    font-size: 16px;
+    color: #fefefe;
+}
+.contact-info form textarea,
+.contact-info form input{
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--crem);
+    border: 1px solid var(--crem);
+    height: 40px;
+}
+.contact-info form textarea:focus,
+.contact-info form input:focus{
+    background-color: transparent;
+    box-shadow: none;
+    border-color: var(--crem);
+    color: var(--crem);
+}
+
+.contact-info form textarea{
+    height: 150px;
+}
+
+.contact-info form button{
+    width: 150px;
+    border-radius: 5px;
+    color: #fefefe;
+    background-color: var(--crem);
+    padding: 8px ;
+    border: 1px solid var(--crem);
+    transition: .5s ease;
+}
+
+.contact-info form button:hover{
+    color: var(--crem);
+    background-color: var(--black);
+}
+
+.contact-list{
+    margin-top: 35px;
+}
+.contact-list li{
+    margin: 5px 0;
+    color: var(--white);
+}
+.contact-list li i{
+    margin-right: 10px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.social-media li a{
+    color: var(--white);
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+}
+.social-media li a i{
+    margin-right: 20px;
+}
+.social-media li a:hover{
+    color: var(--crem);
+}
