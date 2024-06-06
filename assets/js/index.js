@@ -18,7 +18,9 @@ const basketCount = (items) => {
 const items = JSON.parse(localStorage.getItem("cart"));
 if (items) {
     basketCount(items.length);
-} 
+}else{
+    localStorage.setItem("cart", JSON.stringify([]));
+}
 
 
 
