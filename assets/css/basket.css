@@ -85,8 +85,9 @@
   text-align: center;
   padding: 5px 10px;
   border-radius: 5px;
-  color: red;
   background-color: transparent;
+  color: red;
+
   cursor: pointer;
   transition: var(--transition);
 }
@@ -94,6 +95,16 @@
   color: var(--black);
 }
 
+
+.total{
+  max-width: 500px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.total h4{
+  font-size: 20px;
+}
 @media (max-width: 991px) {
   .qty-wrap {
     margin-left: 100px;

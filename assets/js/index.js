@@ -28,7 +28,7 @@ if (items) {
 const addDataToHtml = (product) => {
     let div = document.createElement("div", null);
     div.className = "col-lg-3 col-md-4 col-sm-6 px-2 mb-4";
-    div.innerHTML = `<div div class="product h-100" >
+    div.innerHTML = `<div class="product h-100" >
                             <div class="product-img">
                                 <img src=${product.image} width="100%" alt="">
                             </div>
@@ -81,10 +81,7 @@ const addToCart = (product) => {
     let isInCart = cartItem.findIndex((value) => value.id == product.id);
 
     // IF ITEM NOT FOUND | ITS ADD TO CART
-    if (cartItem.length <= 0) {
-        cartItem = [{ ...product, qty: 1 }];
-
-    } else if (isInCart < 0) { // IF IT NOT IN CART IT ALSO BE ADD
+    if (isInCart < 0) { // IF IT NOT IN CART IT ALSO BE ADD
         cartItem.push({ ...product, qty: 1 });
     } else { // IF ITEM ALREADY ADDED TO CART | ITS WILL INCRESAE THE QUANTITY
         cartItem[isInCart].qty = cartItem[isInCart].qty + 1;
